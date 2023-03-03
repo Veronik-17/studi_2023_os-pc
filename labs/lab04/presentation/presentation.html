@@ -1,0 +1,93 @@
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Щербакова Вероника Владимировна</li>
+<li>Учиница</li>
+<li>НБИбд-03-22</li>
+<li>Российский университет дружбы народов</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img src="./image/kulyabov.jpg" /></p>
+</div>
+</div>
+<h1 id="вводная-часть">Вводная часть</h1>
+<h2 id="актуальность">Актуальность</h2>
+<ul>
+<li>для тех, кто не умеет пользоваться систепой посредствам командной строки</li>
+<li><h2 id="объект-и-предмет-исследования">Объект и предмет исследования</h2></li>
+<li><h2 id="цели-и-задачи">Цели и задачи</h2></li>
+<li>Приобретение практических навыков взаимодействия пользователя с системой по- средством командной строки.</li>
+</ul>
+<h2 id="материалы-и-методы">Материалы и методы</h2>
+<ul>
+<li>Процессор <code>pandoc</code> для входного формата Markdown</li>
+<li>Результирующие форматы
+<ul>
+<li><code>pdf</code></li>
+<li><code>html</code></li>
+</ul></li>
+<li>Автоматизация процесса создания: <code>Makefile</code></li>
+</ul>
+<h1 id="создание-презентации">Создание презентации</h1>
+<h2 id="процессор-pandoc">Процессор <code>pandoc</code></h2>
+<ul>
+<li>Pandoc: преобразователь текстовых файлов</li>
+<li>Сайт: <a href="https://pandoc.org/" class="uri">https://pandoc.org/</a></li>
+<li>Репозиторий: <a href="https://github.com/jgm/pandoc" class="uri">https://github.com/jgm/pandoc</a></li>
+</ul>
+<h2 id="формат-pdf">Формат <code>pdf</code></h2>
+<ul>
+<li>Использование LaTeX</li>
+<li>Пакет для презентации: <a href="https://ctan.org/pkg/beamer">beamer</a></li>
+<li>Тема оформления: <code>metropolis</code></li>
+</ul>
+<h2 id="код-для-формата-pdf">Код для формата <code>pdf</code></h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">slide_level</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">aspectratio</span><span class="kw">:</span><span class="at"> </span><span class="dv">169</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">section-titles</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span><span class="kw">:</span><span class="at"> metropolis</span></span></code></pre></div>
+<h2 id="формат-html">Формат <code>html</code></h2>
+<ul>
+<li>Используется фреймворк <a href="https://revealjs.com/">reveal.js</a></li>
+<li>Используется <a href="https://revealjs.com/themes/">тема</a> <code>beige</code></li>
+</ul>
+<h2 id="код-для-формата-html">Код для формата <code>html</code></h2>
+<ul>
+<li>Тема задаётся в файле <code>Makefile</code></li>
+</ul>
+<pre class="make"><code>REVEALJS_THEME = beige </code></pre>
+<h1 id="результаты">Результаты</h1>
+<h2 id="получающиеся-форматы">Получающиеся форматы</h2>
+<ul>
+<li>Полученный <code>pdf</code>-файл можно демонстрировать в любой программе просмотра <code>pdf</code></li>
+<li>Полученный <code>html</code>-файл содержит в себе все ресурсы: изображения, css, скрипты</li>
+</ul>
+<h1 id="элементы-презентации">Элементы презентации</h1>
+<h2 id="актуальность-1">Актуальность</h2>
+<h2 id="цели-и-задачи-1">Цели и задачи</h2>
+<h2 id="материалы-и-методы-1">Материалы и методы</h2>
+<h2 id="содержание-исследования">Содержание исследования</h2>
+<ol type="1">
+<li>Определите полное имя вашего домашнего каталога (рис. <span class="citation" data-cites="fig:001">[-@fig:001]</span>) <img src="image/4_1.png" id="fig:001" style="width:90.0%" alt="рис.1" /> ##</li>
+<li><ol type="1">
+<li>Перейдите в каталог /tmp.тВыведите на экран содержимое каталога /tmp. Для этого используйте команду ls с различными опциями.(рис. <span class="citation" data-cites="fig:002">[-@fig:002]</span>) <img src="image/4_2_1.png" id="fig:002" style="width:90.0%" alt="рис.2" /> ##</li>
+<li>Определите, есть ли в каталоге /var/spool подкаталог с именем cron?(Нет)(рис. <span class="citation" data-cites="fig:003">[-@fig:003]</span>) <img src="image/4_2_3.png" id="fig:003" style="width:90.0%" alt="рис.3" /> ##</li>
+<li>Перейдите в Ваш домашний каталог и выведите на экран его содержимое. Опре- делите, кто является владельцем файлов и подкаталогов? (Владельцем являюсь я, тк моя домашняя папка)(рис. <span class="citation" data-cites="fig:004">[-@fig:004]</span>) <img src="image/4_2_4.png" id="fig:004" style="width:90.0%" alt="рис.4" /> ##</li>
+</ol></li>
+<li><ol type="1">
+<li>домашнем каталоге создайте новый каталог с именем newdir.+ проверка создания(рис. <span class="citation" data-cites="fig:005">[-@fig:005]</span>) <img src="image/4_3_1.png" id="fig:005" style="width:90.0%" alt="рис.5" /> ##</li>
+<li>В каталоге ~/newdir создайте новый каталог с именем morefun.(рис. <span class="citation" data-cites="fig:006">[-@fig:006]</span>) <img src="image/4_3_2.png" id="fig:006" style="width:90.0%" alt="рис.6" /> ##</li>
+<li>В домашнем каталоге создайте одной командой три новых каталога с именами letters, memos, misk. Затем удалите эти каталоги одной командой.(рис. <span class="citation" data-cites="fig:007">[-@fig:007]</span>) <img src="image/4_3_3.png" id="fig:007" style="width:90.0%" alt="рис.7" /> ##</li>
+<li>Попробуйте удалить ранее созданный каталог ~/newdir командой rm. Проверьте, был ли каталог удалён(рис. <span class="citation" data-cites="fig:008">[-@fig:008]</span>) <img src="image/4_3_4.png" id="fig:008" style="width:90.0%" alt="рис.8" /> ##</li>
+<li>Удалите каталог ~/newdir/morefun из домашнего каталога. Проверьте, был ли каталог удалён.(Уже удален,тк удалили папку в которой он лежал)(рис. <span class="citation" data-cites="fig:009">[-@fig:009]</span>) <img src="image/4_3_5.png" id="fig:009" style="width:90.0%" alt="рис.9" /> ##</li>
+</ol></li>
+<li>команды man(рис. <span class="citation" data-cites="fig:010">[-@fig:010]</span>) <img src="image/4_4.png" id="fig:010" style="width:90.0%" alt="рис.10" /> ##</li>
+<li>Используйте команду man для просмотра описания следующих команд: cd, pwd, mkdir, rmdir, rm. (рис. <span class="citation" data-cites="fig:011">[-@fig:011]</span>) <img src="image/4_6_1.png" id="fig:011" style="width:90.0%" alt="рис.11" /> (рис. <span class="citation" data-cites="fig:012">[-@fig:012]</span>) <img src="image/4_6_2.png" id="fig:012" style="width:90.0%" alt="рис.12" /> (рис. <span class="citation" data-cites="fig:013">[-@fig:013]</span>) <img src="image/4_6_3.png" id="fig:013" style="width:90.0%" alt="рис.13" /> (рис. <span class="citation" data-cites="fig:014">[-@fig:014]</span>) <img src="image/4_6_4.png" id="fig:014" style="width:90.0%" alt="рис.14" /> (рис. <span class="citation" data-cites="fig:015">[-@fig:015]</span>) <img src="image/4_6_5.png" id="fig:015" style="width:90.0%" alt="рис.15" /> ##</li>
+<li>Используя информацию, полученную при помощи команды history, выполните мо- дификацию и исполнение нескольких команд из буфера команд(рис. <span class="citation" data-cites="fig:017">[-@fig:017]</span>) <img src="image/4_7_1.png" id="fig:016" style="width:90.0%" alt="рис.16" /> (рис. <span class="citation" data-cites="fig:018">[-@fig:018]</span>) <img src="image/4_7_2.png" id="fig:017" style="width:90.0%" alt="рис.17" /></li>
+</ol>
+<h2 id="результаты-1">Результаты</h2>
+<p>Приобрели практические навыки взаимодействия пользователя с системой по- средством командной строки</p>
+<h2 id="итоговый-слайд">Итоговый слайд</h2>
+<p>Спасибо за внимание!!!</p>
